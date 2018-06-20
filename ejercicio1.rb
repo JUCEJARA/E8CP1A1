@@ -1,13 +1,11 @@
-def create index(text1, text2)
+def create_index(text1, text2)
 	File.open('index.html', 'w') do |file|
 		file.puts "<p>#{text1}</p>"
 		file.puts "<p>#{text2}</p>"
-
 		file.close
-
 	end
-	end
+end
 
 
-	text1 = "sample1"
-	text2 = "sample2"
+
+create_index("sample2", "sample1")
